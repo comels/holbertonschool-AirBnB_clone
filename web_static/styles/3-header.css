@@ -1,7 +1,9 @@
 header {
-	color: white;
-	background-color: #ff0000;
+	background-color: white;
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	margin-left: 20px;
 	height: 70px;
 	width: 100%;
-	border-bottom: 1px #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
 }
