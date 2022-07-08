@@ -27,21 +27,61 @@
 .amenities {
 	height: 100%;
 	width: 25%;
+	z-index: 1;
 }
 
 .locations {
 	border-right: 1px solid #DDDDDD;
 }
 
-h3 {
+.locations h3,
+.amenities h3 {
 	font-weight: 600;
 	margin-bottom: 0;
     margin-left: 40px;
 }
 
-h4 {
+.locations h4,
+.amenities h4 {
 	font-weight: 400;
     font-size: 14px;
     margin-left: 40px;
     margin-top: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.locations .popover {
+	padding-bottom: 20px;
+}
+
+.amenities ul {
+	padding: 30px;
+}
+
+.popover ul {
+	padding: 0;
+}
+
+.popover {
+	background-color: #FAFAFA;
+	border: #DDDDDD 1px solid;
+	border-radius: 4px;
+	display: none;
+}
+
+.popover h2 {
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.locations:hover .popover {
+	display: block;
+}
+
+.amenities:hover .popover {
+	display: block;
 }
